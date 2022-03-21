@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1 class="logo">
+        🔐 Password Generator 🔐
+        <div class="by">
+        </div>
+    </h1>
+
+    <table class="table">
+        <tr>
+            <td>
+                <div class="input-wrapper" data-text="">  
+                    <p class="buttonText">🌀 Длина пароля:</p>
+                    <input type="text" id="inputLength" class="input" value="15" placeholder="Длина" maxlength="2" />
+                    <p class="buttonText">📈 Количество паролей:</p>
+                    <input type="text" id="inputCount" class="input" value="18" placeholder="Количество паролей" maxlength="2" />  
+                    <button type="button" id="generateButton">Generate</button>    
+                </div>
+            </td>
+            <td>
+                <p class="buttonText">🧾 Пароли:</p>
+                <p>
+                    <textarea rows="20" cols="60" id="passwordArea" name="text"></textarea>
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
